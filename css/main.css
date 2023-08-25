@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none !important;
+
+}
+
+body{
+    font-family: 'Roboto' , sans-serif;
+}
+
+/* start component */
+.button .btn{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+
+.button .btn:hover{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+
+.title{
+    position: relative;
+}
+
+.title img{
+    margin-bottom: 1rem;
+}
+
+.title p{
+    text-transform: uppercase;
+    color: var(--green-color);
+}
+
+.title::after{
+    content: '';
+    position: absolute;
+    width: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid var(--green-color) ;
+}
+
+
+/* end component */
+
+nav{
+    background-color: var(--dark-color);
+}
+
+nav .navbar-toggler{
+    border-color: white;
+    outline: none;
+}
+
+nav .navbar-toggler-icon i{
+    font-size: 25px;
+    color: white;
+}
+
+nav .nav-item a{
+    color: white;
+    font-weight: 500;
+}
+
+nav ul .search{
+    border-left: 1px solid var(--green-color);
+    color: var(--green-color);
+}
+
+nav .nav-item a.active,
+nav .nav-item a:hover{
+    color: var(--green-color) !important;
+}
+
+
+
+.landing{
+    background-color: var(--dark-color);
+    height: calc(100vh - 70px);
+}
+
+.landing .combo .text h1{
+    color: white;
+}
+
+.landing .combo .text p{
+    color: var(--green-color);
+}
+
+.features .icon-container{
+    height: 200px;
+}
+
+.features .icon-container i{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.features .icon-container .number{
+    font-size: 12rem;
+    color: var(--section-color);
+}
+
+.features .icon-container .icon{
+    font-size: 4rem;
+    color: var(--green-color);
+}
+
+.features .feature .text h2{
+    color: var(--yellow-color);
+    text-transform: uppercase;
+}
+
+
+
+.our-work{
+    background-color: var(--section-color);
+}
+
+.our-work a{
+    color: var(--dark-color) ;
+}
+
+.our-work a:hover{
+    color: var(--red-color);
+}
+
+.our-work .box{
+    overflow: hidden;
+}
+
+.our-work .box::before {
+    content: attr(data-work);
+    position: absolute;
+    background-color: rgb(51 209 204 / 76%);
+    width: calc(100%);
+    height: calc(100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+    font-size: 1.5rem;
+    transform: translateX(calc(-100% - 5px));
+}
+
+.our-work .box:hover::before {
+    transform: translateX(0);
+}
+
+
+.about .description{
+    max-width: 500px;
+}
+
+
+.about .image img{
+    max-width: 100%;
+}
+
+
+
+
+.meet{
+    background-color: var(--section-color);
+}
+
+.meet .meet-title h2{
+    color: var(--yellow-color);
+}
+
+.meet .box{
+    background-color: white;
+}
+
+.meet img{
+    max-width: 100%;
+}
+
+.meet .box h3{
+    background-color: var(--green-color);
+    color: white;
+}
+
+
+.project{
+    background-color: var(--dark-color);
+}
+
+.project .text h2{
+    color: white;
+}
+
+
+.blog img{
+    max-width: 100%;
+}
+
+.subscribe{
+    background-color: var(--yellow-color);
+}
+
+.subscribe .input-f{
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+}
+
+.subscribe .input-f::placeholder{
+    color: white;
+}
+
+.subscribe .sub-btn{
+    color: yellow;
+    background-color: var(--dark-color);
+}
+
+
+.footer{
+    background-color: var(--dark-color);
+}
+
